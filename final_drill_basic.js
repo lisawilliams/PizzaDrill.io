@@ -22,10 +22,10 @@ function getReceipt() {
 	console.log(selectedSize+" = $"+sizeTotal+".00");
 	console.log("size text1: "+text1);
 	console.log("subtotal: $"+runningTotal+".00");
-	getMeat(runningTotal,text1); 
+	getMeat(runningTotal,text1);
 };
-	
-	
+
+
 function getMeat(runningTotal, text1) {
 		var meatTotal = 0;
 		var selectedMeat = [];
@@ -52,8 +52,8 @@ function getMeat(runningTotal, text1) {
 	document.getElementById("totalPrice").innerHTML = "</h3>Total: <strong>$"+runningTotal+".00"+"</strong></h3>";
 	getVeggie(runningTotal, text1);
 };
-	
-	
+
+
 function getVeggie(runningTotal, text1) {
 		var veggieTotal = 0;
 		var selectedVeggie = [];
@@ -80,7 +80,7 @@ function getVeggie(runningTotal, text1) {
 	document.getElementById("totalPrice").innerHTML = "</h3>Total: <strong>$"+runningTotal+".00"+"</strong></h3>";
 	getCheese(runningTotal, text1);
 };
-	
+
 function getCheese (runningTotal, text1) {
 		var cheeseTotal = 0;
 		var selectedCheese = [];
@@ -108,7 +108,7 @@ function getCheese (runningTotal, text1) {
 	document.getElementById("totalPrice").innerHTML = "</h3>Total: <strong>$"+runningTotal+".00"+"</strong></h3>";
 	getSauce(runningTotal, text1);
 };
-	
+
 function getSauce (runningTotal, text1) {
 		var sauceTotal = 0;
 		var selectedSauce = [];
@@ -134,11 +134,11 @@ function getSauce (runningTotal, text1) {
 	console.log("sauce text1: "+text1);
 	console.log("Purchase Total: "+"$"+runningTotal+".00");
 	document.getElementById("showText").innerHTML=text1;
-	document.getElementById("totalPrice").innerHTML = "</h3>Total: <strong>$"+runningTotal+".00"+"</strong></h3>";
+	// document.getElementById("totalPrice").innerHTML = "</h3>Total: <strong>$"+runningTotal+".00"+"</strong></h3>";
 	getCrust(runningTotal, text1);
 };
-	
-	
+
+
 function getCrust (runningTotal, text1) {
 		var crustTotal = 0;
 		var selectedCrust = [];
@@ -162,16 +162,11 @@ function getCrust (runningTotal, text1) {
 	} else if (selectedCrust === "House Special Crust") {
 			crustTotal = "House Special Crust";
 	}
-	console.log(runningTotal);
+	console.log("this is final runningTotal", runningTotal);
 	runningTotal = (runningTotal + text1);
 	console.log("selectedCrust: "+crustTotal);
 	console.log("crust text1: "+text1);
 	console.log("Purchase Total: "+"$"+runningTotal+".00");
-	document.getElementById("showText").innerHTML=text1;
-	document.getElementById("totalPrice").innerHTML = "</h3>Total: <strong>$"+runningTotal+".00"+"</strong></h3>";
+	// document.getElementById("showText").innerHTML=text1;
+	// document.getElementById("totalPrice").innerHTML = "</h3>Total: <strong>$"+runningTotal+".00"+"</strong></h3>";
 };
-	
-	
-	
-	
-	
